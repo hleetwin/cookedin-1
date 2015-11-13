@@ -5,7 +5,7 @@
 
 'use strict';
 
-var Job = require('../api/Job/Job.model');
+var Job = require('../api/job/job.model');
 var User = require('../api/user/user.model');
 
 Job.find({}).remove(function() {
