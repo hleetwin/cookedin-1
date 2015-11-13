@@ -3,8 +3,12 @@
 angular.module('cookedinApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [{
-      'title': 'Home',
+      'title': 'JOB LISTING',
       'link': '/'
+    },
+    {
+      'title': 'POST A JOB',
+      'link': '/job'
     }];
 
     $scope.isCollapsed = true;

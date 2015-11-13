@@ -2,21 +2,21 @@
 
 angular.module('cookedinApp')
   .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [];
+    $scope.awesomeJobs = [];
 
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
+    $http.get('/api/jobs').success(function(awesomeJobs) {
+      $scope.awesomeJobs = awesomeJobs;
     });
 
-    $scope.addThing = function() {
-      if($scope.newThing === '') {
+    $scope.addJob = function() {
+      if($scope.newJob === '') {
         return;
       }
-      $http.post('/api/things', { name: $scope.newThing });
-      $scope.newThing = '';
+      $http.post('/api/jobs', { name: $scope.newJob });
+      $scope.newJob = '';
     };
 
-    $scope.deleteThing = function(thing) {
-      $http.delete('/api/things/' + thing._id);
+    $scope.deleteJob = function(job) {
+      $http.delete('/api/jobs/' + job._id);
     };
   });
