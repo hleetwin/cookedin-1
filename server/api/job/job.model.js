@@ -5,10 +5,10 @@ var mongoose = require('mongoose'),
 
 var JobSchema = new Schema({
   title: String,
-  experience: String,
   restaurant: String,
+  location: String,
   description: String,
-  active: Boolean
+  experience: String,
 });
 
 module.exports = mongoose.model('Job', JobSchema);
