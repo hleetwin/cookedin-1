@@ -10,53 +10,53 @@
 'use strict';
 
 var _ = require('lodash');
-var Thing = require('./thing.model');
+var Job = require('./job.model');
 
 // Get list of things
 exports.index = function(req, res) {
-  Thing.find(function (err, things) {
+  Job.find(function (err, things) {
     if(err) { return handleError(res, err); }
     return res.status(200).json(things);
   });
 };
 
-// Get a single thing
+// Get a single job
 exports.show = function(req, res) {
-  Thing.findById(req.params.id, function (err, thing) {
+  Job.findById(req.params.id, function (err, job) {
     if(err) { return handleError(res, err); }
-    if(!thing) { return res.status(404).send('Not Found'); }
-    return res.json(thing);
+    if(!job) { return res.status(404).send('Not Found'); }
+    return res.json(job);
   });
 };
 
-// Creates a new thing in the DB.
+// Creates a new job in the DB.
 exports.create = function(req, res) {
-  Thing.create(req.body, function(err, thing) {
+  Job.create(req.body, function(err, job) {
     if(err) { return handleError(res, err); }
-    return res.status(201).json(thing);
+    return res.status(201).json(job);
   });
 };
 
-// Updates an existing thing in the DB.
+// Updates an existing job in the DB.
 exports.update = function(req, res) {
   if(req.body._id) { delete req.body._id; }
-  Thing.findById(req.params.id, function (err, thing) {
+  Job.findById(req.params.id, function (err, job) {
     if (err) { return handleError(res, err); }
-    if(!thing) { return res.status(404).send('Not Found'); }
-    var updated = _.merge(thing, req.body);
+    if(!job) { return res.status(404).send('Not Found'); }
+    var updated = _.merge(job, req.body);
     updated.save(function (err) {
       if (err) { return handleError(res, err); }
-      return res.status(200).json(thing);
+      return res.status(200).json(job);
     });
   });
 };
 
-// Deletes a thing from the DB.
+// Deletes a job from the DB.
 exports.destroy = function(req, res) {
-  Thing.findById(req.params.id, function (err, thing) {
+  Job.findById(req.params.id, function (err, job) {
     if(err) { return handleError(res, err); }
-    if(!thing) { return res.status(404).send('Not Found'); }
-    thing.remove(function(err) {
+    if(!job) { return res.status(404).send('Not Found'); }
+    job.remove(function(err) {
       if(err) { return handleError(res, err); }
       return res.status(204).send('No Content');
     });
