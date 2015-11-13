@@ -1,6 +1,8 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
 <h2>Add job</h2>
 <div class="col-sm-12">
-<form class="form" name="form" ng-submit="" novalidate>
+<form class="form" name="form" ng-submit="addJob()" novalidate>
   <div class="form-group">
     <label>Job name</label>
     <input type="text" name="name" class="form-control" ng-model="job.name" required>
