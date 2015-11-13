@@ -9,7 +9,6 @@ angular.module('cookedinApp')
     $scope.addJob = function() {
       Job.addJob($scope.job)
       .then(function(res) {
-        console.log(res);
         $location.path('/main');
       })
       .catch(function(error) {

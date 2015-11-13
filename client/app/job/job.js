@@ -3,7 +3,7 @@
 angular.module('cookedinApp')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/jobs', {
+      .when('/job', {
         templateUrl: 'app/job/job.html',
         controller: 'JobCtrl'
       });
