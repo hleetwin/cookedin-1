@@ -4,8 +4,10 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var JobSchema = new Schema({
-  name: String,
-  info: String,
+  title: String,
+  experience: String,
+  restaurant: String,
+  description: String,
   active: Boolean
 });
 
