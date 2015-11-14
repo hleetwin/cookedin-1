@@ -10,6 +10,10 @@
     <li><a href="" class="contact" title="Contact">Contact</a></li>
     <li><a href="" class="event" title="Events">Events</a></li>
     <li><a href="" class="blog" title="Blog">Blog</a></li>  
-  </ul>  
+  </ul>
+
+  <ul ng-repeat="job in awesomeJobs">
+    <li>{{ job.title }}</li>
+  </ul>
   </nav>
 </header>

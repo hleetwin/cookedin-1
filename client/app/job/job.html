@@ -1,31 +1,51 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
+<!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
 
-<h2>Add job</h2>
-<div class="col-sm-12">
-<form class="form" name="form" ng-submit="addJob()" novalidate>
-  <div class="form-group">
-    <label>Title</label>
-    <input type="text" name="title" class="form-control" ng-model="job.title" required>
-  </div>
-  <div class="form-group">
-    <label>Restaurant</label>
-    <input type="text" name="title" class="form-control" ng-model="job.restaurant" required>
-  </div>
-  <div class="form-group">
-    <label>Location</label>
-    <input type="text" name="title" class="form-control" ng-model="job.location" required>
-  </div>
-  <div class="form-group">
-    <label>Description</label>
-    <input type="text" name="info" class="form-control" ng-model="job.description" required>
-  </div>
-   <div class="form-group">
-    <label>Experience</label>
-    <input type="text" name="experience" class="form-control" ng-model="job.experience" required>
-  </div>
- <div>
-    <button class="btn btn-inverse btn-lg btn-login" type="submit">
-      Submit job
-    </button>
-  </div>
-</form>
+<header id="main-header">
+  <nav id="main-nav">
+  <ul>
+    <li><a href="/" class="home" title="Home">Home</a></li>
+    <li><a href="/job" class="oven" title="Oven">Jobs</a></li>
+    <li><a href="" class="pizza-on-place" title="Pizza on Place">Hannahahaha smells like eucalyptus</a></li>
+    <li><a href="" class="about" title="About Us">About Us</a></li>
+    <li><a href="" class="contact" title="Contact">Contact</a></li>
+    <li><a href="" class="event" title="Events">Events</a></li>
+    <li><a href="" class="blog" title="Blog">Blog</a></li>  
+  </ul>
+
+  <ul ng-repeat="job in awesomeJobs">
+    <li>{{ job.title }}</li>
+  </ul>
+  </nav>
+</header>
+
+<div class="Job_Form">
+  <h2>Add job</h2>
+  <div class="col-sm-12">
+  <form class="form" name="form" ng-submit="addJob()" novalidate>
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" name="title" class="form-control" ng-model="job.title" required>
+    </div>
+    <div class="form-group">
+      <label>Restaurant</label>
+      <input type="text" name="title" class="form-control" ng-model="job.restaurant" required>
+    </div>
+    <div class="form-group">
+      <label>Location</label>
+      <input type="text" name="title" class="form-control" ng-model="job.location" required>
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <input type="text" name="info" class="form-control" ng-model="job.description" required>
+    </div>
+     <div class="form-group">
+      <label>Experience</label>
+      <input type="text" name="experience" class="form-control" ng-model="job.experience" required>
+    </div>
+   <div>
+      <button class="btn btn-inverse btn-lg btn-login" type="submit">
+        Submit job
+      </button>
+    </div>
+  </form>
+</div>
