@@ -9,11 +9,25 @@ html,body{
 
 #main-nav { top: 63px; left: 20px; position: fixed; z-index: 9999; }
 #main-nav li { list-style: none; }
-#main-nav a { width: 0; height: 36px; display: block; padding-left: 35px; font-family: Comic Sans MS; font-size: 14px; color: white; overflow: hidden; }
-#main-nav a.home { background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-home-active.png") no-repeat; }
-#main-nav a.oven { background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-oven.png") no-repeat; }
-#main-nav a.pizza-on-place { background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-pizza-on-place.png") no-repeat; }
-#main-nav a.about { background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-about.png") no-repeat; }
-#main-nav a.contact { background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-contact.png") no-repeat; }
-#main-nav a.event { background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-event.png") no-repeat; }
-#main-nav a:hover { width: auto; }
+#main-nav a { width: 0; height: 36px; display: block; padding-left: 35px; font-family: 'Verdana'; font-size: 15px; color: white; overflow: hidden; }
+#main-nav a.home {
+  background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-home-active.png") no-repeat;
+}
+#main-nav a.oven {
+  background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-oven.png") no-repeat;
+}
+#main-nav a.pizza-on-place {
+  background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-pizza-on-place.png") no-repeat; 
+}
+#main-nav a.about {
+  background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-about.png") no-repeat;
+}
+#main-nav a.contact {
+  background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-contact.png") no-repeat;
+}
+#main-nav a.event {
+  background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-event.png") no-repeat;
+}
+#main-nav a:hover {
+  width: auto;
+}
