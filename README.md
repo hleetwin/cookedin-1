@@ -6,7 +6,9 @@ mongod --dbpath data
 # turn on node server
 grunt serve
 
-# deploy to heroku
+# before deploy
 grunt build
+
+# deploy to heroku
 grunt buildcontrol:heroku
 
