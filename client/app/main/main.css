@@ -42,7 +42,15 @@ html,body{
 .verticalLine {
   border-left: thick solid white;
   height: 1500px;
-.job-image{
+}
+
+.job-image {
   width: 100px;
   height: 100px;
+}
+
+.hannah {
+  top: 100px; left: 350px; position: fixed; 
+  border-radius: 50%;
+  cursor: pointer;
 }
