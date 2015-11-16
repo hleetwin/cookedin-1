@@ -35,7 +35,7 @@ Job.find({}).remove(function() {
     location: "Milwaukee, WI, US",
     description: "We are looking for an Executive Chef to lead the culinary team of The Iron Horse Hotel. You will work with our culinary director, Michelin star chef Suzy Crofton, to create exceptional menus. The hotel features a number of award-winning outlets including Branded Bar, Smyth Restaurant and The Yard. http://www.theironhorsehotel.com/careers/",
     experience: "",
-    image: "http://www.bringfido.com/site_media/photos/ein/7/3/2/270237/2097106_1_b.jpg"
+    image: "https://c2.staticflickr.com/8/7025/6515457313_f2ee95017b_b.jpg"
   },
   // {
   //   title: "Chef de Cuisine",
@@ -59,7 +59,7 @@ Job.find({}).remove(function() {
     location: 'Cambridge, MA',
     description: 'Basic understanding of a kitchen operation within the hotel. Responsible for producing a consistent, quality product that meets and exceeds the guests’ needs in a timely manner. Person has basic skills in department training and is capable of assuming department responsibilities in the absence of the Sous Chef. ', 
     experience: '',
-    image: 'http://cambridge.hyatt.com/content/dam/PropertyWebsites/regency/bosrc/Media/All/Hyatt-Regency-Cambridge-P189-CCVB.masthead-feature-panel-medium.jpg'
+    image: 'http://hauteliving.com/wp-content/uploads/2015/06/cafe-fleuri-677x502.jpg'
   }
   );
 });
