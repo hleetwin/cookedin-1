@@ -46,3 +46,7 @@ html,body{
   width: 100px;
   height: 100px;
 }
+
+.hannah {
+  top: 250px; left: 600px; position: fixed; 
+}

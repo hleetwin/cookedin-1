@@ -6,5 +6,9 @@ angular.module('cookedinApp')
       .when('/', {
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'app/main/contact.html',
+        controller: 'ContactCtrl'
       });
   });
