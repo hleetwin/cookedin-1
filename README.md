@@ -8,5 +8,5 @@ grunt serve
 
 # deploy to heroku
 grunt build
-
+grunt buildcontrol:heroku
 
