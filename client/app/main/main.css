@@ -42,4 +42,7 @@ html,body{
 .verticalLine {
   border-left: thick solid white;
   height: 1500px;
+.job-image{
+  width: 100px;
+  height: 100px;
 }
