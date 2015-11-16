@@ -38,3 +38,8 @@ html,body{
 }
 
 .container-table { top: 63px; left: 20px; position: fixed; } 
+
+.verticalLine {
+  border-left: thick solid white;
+  height: 1500px;
+}
