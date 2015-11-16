@@ -9,7 +9,7 @@ angular.module('cookedinApp', [
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/main'
       });
 
     $locationProvider.html5Mode(true);
