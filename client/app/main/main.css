@@ -28,6 +28,9 @@ html,body{
 #main-nav a.event {
   background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-event.png") no-repeat;
 }
+#main-nav a.blog {
+  background: url("http://mypizzaoven.nl/wp-content/themes/ivana_template_v7/images/navi/i-blog.png") no-repeat;
+}
 #main-nav a:hover {
   width: auto;
 }
