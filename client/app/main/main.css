@@ -57,3 +57,20 @@ html,body{
   border-radius: 50%;
   cursor: pointer;
 }
+
+
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-inner .item {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-inner .item img {
+    width: 100%;
+    min-height: 100%;
+    max-height: none;
+}
