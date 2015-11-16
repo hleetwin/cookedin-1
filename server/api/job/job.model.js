@@ -9,6 +9,7 @@ var JobSchema = new Schema({
   location: String,
   description: String,
   experience: String,
+  image: String
 });
 
 module.exports = mongoose.model('Job', JobSchema);
