@@ -31,3 +31,8 @@ html,body{
 #main-nav a:hover {
   width: auto;
 }
+
+.imageBTN {
+  width: 50px;
+  height: 50px;
+}
