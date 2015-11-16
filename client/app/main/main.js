@@ -10,5 +10,10 @@ angular.module('cookedinApp')
       .when('/contact', {
         templateUrl: 'app/main/contact.html',
         controller: 'ContactCtrl'
+      })
+      .when('/blog', {
+        templateUrl: 'app/main/blog.html',
+        controller: 'BlogCtrl'
       });
+
   });
