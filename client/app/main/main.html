@@ -11,6 +11,10 @@
     <li><a href="" class="event" title="Events">EVENTS</a></li>
     <li><a href="" class="blog" title="Blog">BLOG</a></li>  
   </ul>
+
+  <ul ng-repeat="job in awesomeJobs">
+    <li>{{ job.title }}</li>
+  </ul>
   </nav>
 
   <div class="container container-table">
