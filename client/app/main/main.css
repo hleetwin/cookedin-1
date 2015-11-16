@@ -2,7 +2,7 @@ html,body{
     margin:0;
     padding:0;
     height:100%;
-    overflow:hidden;
+    overflow:scroll;
     cursor:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/chalk.png),auto;
     background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
     }
@@ -53,7 +53,7 @@ html,body{
 }
 
 .hannah {
-  top: 100px; left: 350px; position: fixed; 
+  top: 100px; left: 350px; position: relative; 
   border-radius: 50%;
   cursor: pointer;
 }
