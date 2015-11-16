@@ -14,6 +14,9 @@ angular.module('cookedinApp')
       .when('/blog', {
         templateUrl: 'app/main/blog.html',
         controller: 'BlogCtrl'
+      })
+      .when('/aboutus', {
+        templateUrl: 'app/main/about.html',
+        controller: 'AboutCtrl'
       });
-
   });
