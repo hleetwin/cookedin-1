@@ -40,7 +40,11 @@ html,body{
   height: 50px;
 }
 
-.container-table { top: 63px; left: 20px; position: fixed; } 
+li {
+  float: left;
+}
+
+.container-table { top: 100px; left: 0px; position: fixed; } 
 
 .verticalLine {
   border-left: thick solid white;
@@ -60,7 +64,8 @@ html,body{
 
 
 .carousel-inner {
-    height: 500px;
+  top: 0px;  
+  height: 500px;
 }
 
 .carousel-inner .item {
@@ -70,9 +75,14 @@ html,body{
 }
 
 .carousel-inner .item img {
-    width: 50%;
-    min-height: 50%;
-    max-height: none;
+  float: left;
+  width: 50%;
+  min-height: 50%;
+  max-height: none;
+}
+
+.item {
+  left: 10px;
 }
 div img { 
   display: inline-block;
