@@ -1,4 +1,6 @@
 .Job_Form {
+  position: absolute;
+  top: 100px;
   padding-left: 150px;
   width: 1000px;
   color: #cccccc;

@@ -65,7 +65,8 @@ li {
 
 .carousel-inner {
   top: 0px;  
-  height: 500px;
+  height: auto;
+  width: auto;
 }
 
 .carousel-inner .item {
@@ -75,8 +76,7 @@ li {
 }
 
 .carousel-inner .item img {
-  float: left;
-  width: 50%;
+  width: 75%;
   min-height: 50%;
   max-height: none;
 }
@@ -87,3 +87,15 @@ li {
 div img { 
   display: inline-block;
 } 
+
+.jobInfo {
+  padding-left: 2em;
+}
+
+.jobInfo h2 {
+  color: #77dd77;
+}
+
+#chalkboard {
+    overflow : scroll;
+}
