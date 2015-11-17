@@ -15,7 +15,7 @@
 
   <div class="container container-table">
     <div class="row vertical-center-row">
-      <div class="col-md-8 col-md-offset-3" style="color: white">
+      <div class="col-md-12 col-md-offset-1" style="color: white">
         
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
@@ -27,16 +27,11 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="http://exp.cdn-hotels.com/hotels/2000000/1900000/1894800/1894751/1894751_107_z.jpg" alt="Chania">
-    </div>
-
-    <div class="item">
-      <img src="https://c2.staticflickr.com/8/7025/6515457313_f2ee95017b_b.jpg" alt="Chania">
-    </div>
-
-    <div class="item">
-      <img src="http://hauteliving.com/wp-content/uploads/2015/06/cafe-fleuri-677x502.jpg" alt="Flower">
+    <div class="item" ng-class="{active:!$index}" ng-repeat="job in awesomeJobs">
+      <img src="{{job.image}}" alt="Chania">
+      <div>{{job.title}}</div>
+      <div>{{job.location}}</div>
+      <div>{{job.description}}</div>
     </div>
 
   </div>
@@ -54,10 +49,4 @@
       </div>
     </div>
   </div>
-
-
-
-
-
->>>>>>> add carousel to index.html
 </header>
