@@ -28,10 +28,16 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item" ng-class="{active:!$index}" ng-repeat="job in awesomeJobs">
-      <img src="{{job.image}}" alt="Chania">
-      <div>{{job.title}}</div>
-      <div>{{job.location}}</div>
-      <div>{{job.description}}</div>
+      <img src="{{job.image}}">
+      <div class="jobInfo">
+        <h2>{{job.title}}</h2>
+        <br>
+        <h4>Location</h4>
+        <div>{{job.location}}</div>
+        <br>
+        <h4>Job Description</h4>
+        <div>{{job.description}}</div>
+      </div>
     </div>
 
   </div>
